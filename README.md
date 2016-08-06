@@ -1,2 +1,1 @@
-# manual
-RTFM
+# [RTFM](https://en.wikipedia.org/wiki/RTFM)
