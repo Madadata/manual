@@ -18,4 +18,5 @@ Code review 还是一个项目管理的工具。我们鼓励大家勤发 code re
 3. 指定 reviewer 的时候应该包括比较了解这个项目的人，但我们鼓励所有人都参与
 4. 指定的 reviewer 有责任看完 code review，并且给出评论，提交者必须把评论解决之后，等待留言通过（比如 LGTM），才可以 merge——须知 reviewer 和 code review 作者对代码质量负有同样责任
 5. 为了更高效的协作，code review 的作者有责任节约 reviewer 的时间，比如在发起的 code review 中不可以有忘记删除的代码、评论，不可以没有通过 linter 的测试，不可以有一些明显不应该出现的语句（比如 `System.out` ），不应该在 CI server 测试没有通过的时候就邀请大家——经常犯这条的人需要请对方吃冰激凌
+6. 对于 code review 里面的评论，作者必须一一回应、修改；如果因为某些原因需要推迟到随后的 pull request 再修改的，必须在 Github 中创建一个 issue，描述清楚内容，把对应评论的链接附在 issue 中，然后把 issue 的链接也贴到评论的回复里面——这样做的目的是为了防止作者之后忘掉修改（it happens to everyone）
 
