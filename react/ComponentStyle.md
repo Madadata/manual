@@ -3,31 +3,48 @@
 * [when to use?](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md)
   * no lifecycle method
   * no state to keep, only render data from props.
+  * [whenever you can](http://buildwithreact.com/article/stateless-functional-components), you should use stateless functional component. Because under the hood, there is and there will be much performance optimization done for it.
 
 * code snippet
 
-```
-// Madadata.jsx
-import React, { PropTypes } from 'react';
+  ```
+  // Madadata.jsx
+  import React, { PropTypes } from 'react';
 
-// you can do this with function declaration. (function Madadata = ())
-const Madadata = props => <div>{props.name}</div>;
+  // you can do this with function declaration. (function Madadata = ())
+  // if component fits on one line
+  const Madadata = props => <div>{props.name}</div>;
+  // if component has no logic outside JSX
+  const Madadata = ({ name }) => (
+    <div>
+      {name}
+    </div>
+  );
+  // if component has logic outside JSX
+  const Madadata = ({ name }) => {
+    const transformedName = transform(name);
+    return (
+      <div>
+        {transformedName}
+      </div>
+    )
+  };
 
-Madadata.propTypes = {
-  name: PropTypes.string.isRequired,
-};
+  Madadata.propTypes = {
+    name: PropTypes.string.isRequired,
+  };
 
-// don't use context if you don't know what it is.
-// Madadata.contextTypes = {}
+  // don't use context if you don't know what it is.
+  // Madadata.contextTypes = {}
 
-export default Madadata;
-```
+  export default Madadata;
+  ```
 
 * signature
 
-```
-(props, context) => JSXElement;
-```
+  ```
+  (props, context) => JSXElement;
+  ```
 
 * Notes
   * capitalize the **first character** of your component.
