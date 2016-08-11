@@ -37,6 +37,7 @@ export default Madadata;
   * name the file as **ComponentName.jsx**.
 
 * Styles
+  * prefer PascalCase for component name
   * prefer arrow function
   * If JSX spans for several lines
     ```
@@ -63,9 +64,9 @@ export default Madadata;
   * has lifecycle method
   * has state to keep.
   * UI is determined only by state, props.
-    * UI do not depend on global variable.
-    * UI do not use any utility function that has variables from outside.
-    * UI do not have children that are not PureComponent.
+    * UI does not depend on global variable.
+    * UI does not use any utility function that has variables from outside.
+    * UI does not have children that are not PureComponent.
 
 * code snippet
 
@@ -82,7 +83,7 @@ class PureMadadata extends PureComponent {
   }
 
   componentWillMount() {
-    // * call this.setState here to update state, the next render will pick up state changes.
+    // * call this.setState here to update state, the first render will pick up state changes.
     // * will only be invoked once.
   }
 
@@ -149,7 +150,7 @@ export default PureMadadata;
       super();
     }
     ```
-    you can should omit the constructor.
+    you should omit the constructor.
   * if you want to use props or both props and context in your constructor, you need to pass them to the constructor of its super class.
 
     ```
