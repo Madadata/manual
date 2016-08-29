@@ -312,6 +312,12 @@ export default PureMadadata;
   }
   ```
 
+  * prefer using isolated statement for defaultState when declaring reducer
+  ```
+  const initialState = { isFetching: false };
+  export default function reducer(state = initialState, action) {}
+  ```
+
 * proposes
   * prefer using ES6 Symbol for action type.
 
@@ -320,3 +326,19 @@ export default PureMadadata;
   ```
 
   so that we don't have to type long words and disable eslint-max-len. Any there will be no name clashes.
+
+# Import
+
+* prefer specific import first and default import next
+
+  ```
+  import React, { PropTypes, Component } from 'react';
+  import { connect } from 'react-redux';
+  import { showCredentials, hideCredentials } from '../../modules/credentials/action';
+  import { showDetails, hideDetails } from '../../modules/details/action';
+  import { hideScheduling } from '../../modules/scheduling/action';
+  import { hideNamingNDescribing } from '../../modules/namingndescribing/action';
+  import Collapse from 'react-collapse';
+  import MDButton from 'mdbutton';
+  import styles from '../App/App.css';
+  ```
