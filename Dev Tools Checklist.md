@@ -19,7 +19,7 @@
 - [ ] brew install vim --override-system-vi
 - [ ] brew install awscli
 
-### use brew cask to install other tools
+### Use brew cask to install other tools
 
 - [ ] brew cask install spectacle
 - [ ] brew cask install docker
@@ -59,3 +59,7 @@
 - [ ] brew install ngrok
 - [ ] brew install curl
 - [ ] brew install wget --with-iri
+
+## Time to do some research
+
+- [ ] figure out and/or ask someone WTF was everything that you just installed? 
