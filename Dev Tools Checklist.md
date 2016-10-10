@@ -2,25 +2,23 @@
 
 ## System
 
+- [ ] setup VPN and ShadowSocks
 - [ ] install brew
 - [ ] brew install zsh
 - [ ] search and install oh-my-zsh
 - [ ] edit and configure your `~/.zsh` from now on
 - [ ] make sure `/usr/local/bin` appears as the first item in `$PATH`
-- [ ] setup VPN and ShadowSocks
 
-### Tools and utilities 
+### Tools and utilities
 
+- [ ] brew cask install slack
 - [ ] brew install thefuck
 - [ ] brew cask install virtualbox
 - [ ] brew cask install flux
-- [ ] brew cask install slack
+- [ ] brew cask install caffeine
 - [ ] brew install xz
 - [ ] brew install vim --override-system-vi
 - [ ] brew install awscli
-
-### Use brew cask to install other tools
-
 - [ ] brew cask install spectacle
 - [ ] brew cask install docker
 - [ ] brew cask install atom
