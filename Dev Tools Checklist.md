@@ -30,10 +30,12 @@
 
 - [ ] brew cask install postman
 - [ ] brew install httpie
+- [ ] install nvm following its GitHub repo
+- [ ] install the latest node (at least version 6)
 
 ## Python
 
-- [ ] brew install pyenv
+- [ ] install pyenv following its GitHub repo
 - [ ] pyenv install 2.7.12
 - [ ] pyenv install 3.5.2
 - [ ] update your `~/.zshrc` to include 
