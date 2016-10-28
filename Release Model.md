@@ -34,5 +34,5 @@ Generate a new CHANGELOG using the generator tool. Then go ahead and commit ever
 - [ ] **Private Package**: make sure your package name in `package.json` is prefixed with your scope, like `@madadata`.
 - [ ] commit all your changes
 - [ ] push to github and **let the CI pass**
-- [ ] push the tag using `git push --tags`
+- [ ] tag your commit by `git tag a..b.c` and push the tag by `git push --tags`
 - [ ] npm publish
