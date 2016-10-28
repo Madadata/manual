@@ -25,3 +25,14 @@ Make sure you only change version and then commit. Push the new branch with that
 After you bumped the version, continue on the release branch. You can edit again the `<version>` with the trailing `-SNAPSHOT` if you are using Java and maven (not for node though).
 
 Generate a new CHANGELOG using the generator tool. Then go ahead and commit everything. This closes the release branch - so after the PR from release branch to master is merged, you are done, hooray!
+
+### Npm Publish Checking List
+
+- [ ] checkout a new release branch `release/a.b.c`
+- [ ] edit `version` in `package.json`
+- [ ] create an `.npmignore` file if you didn't, otherwise npm will take your `.gitignore` as `.npmignore`.
+- [ ] **Private Package**: make sure your package name in `package.json` is prefixed with your scope, like `@madadata`.
+- [ ] commit all your changes
+- [ ] push to github and **let the CI pass**
+- [ ] tag your commit by `git tag a..b.c` and push the tag by `git push --tags`
+- [ ] npm publish
